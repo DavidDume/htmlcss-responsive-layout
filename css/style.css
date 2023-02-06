@@ -7,7 +7,7 @@
 :root {
     --header: #0084fd;
     --benefits: #b5ddff;
-    --planning: #9792e4;
+    --main-color: #9792e4;
 }
 
 header {
@@ -44,7 +44,7 @@ header .container {
 }
 
 .planning {
-    background-color: var(--planning);
+    background-color: var(--main-color);
     padding: 20px 0;
 }
 
@@ -54,12 +54,73 @@ header .container {
     border: 1px solid black;
 }
 
+.card {
+    height: 100px;
+}
+
+.testimonials {
+    margin-top: 20px;
+}
+
+.testimonials .card {
+    text-align: center;
+    background-color: var(--main-color);
+    margin: 20px 0;
+}
+
+.benefits {
+    background-color: var(--main-color);
+    padding: 20px 0;
+}
+
+.benefits .card {
+    background-color: white;
+    margin: 20px 0;
+    border: 1px solid black;
+}
+
+.debug .about .container > div {
+    border: 1px solid black;
+    height: 100px;
+}
+.debug .about .container > div:first-child {
+    height: 200px;
+}
+
+.about {
+    margin: 20px 0;
+}
+
+.get-started {
+    background-color: var(--main-color);
+}
+
+.debug .get-started .container > div {
+    border: 1px solid black;
+    height: 200px;
+    background-color: white;
+}
+
+.get-started {
+    padding: 20px 0;
+}
+
+footer {
+    background-color: black;
+    padding: 20px 0;
+}
+
+.debug footer .container > div {
+    border: 1px solid black;
+    height: 200px;
+    background-color: white;
+}
 
 @media screen and (min-width: 768px) {
     .margin-auto {
         width: 70%;
     }
-    .benefits .columns {
+    .presentation .columns {
         display: flex;
         flex-wrap: wrap;
         margin-right: -0.75rem;
@@ -72,6 +133,35 @@ header .container {
         width: calc((100% / 3) - 1.5rem);
         margin-right: 0.75rem;
         margin-left: 0.75rem;
+    }
+    .testimonials .card {
+        display: flex;
+        align-items: center;
+    }
+    .testimonials .card div:first-child {
+        width: 30%;
+    }
+    .benefits .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .benefits .card {
+        width: calc((100% / 2) - 1.5rem);
+        margin-right: 0.75rem;
+        margin-left: 0.75rem;
+    }
+    .about .container {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .debug .about .container > div {
+        width: 50%;
+    }
+    .get-started .margin-auto {
+        width: 50%;
+    }
+    footer .margin-auto {
+        width: 50%;
     }
 }
 @media screen and (min-width: 1024px) {
@@ -90,5 +180,27 @@ header .container {
     }
     .debug .planning .container > div {
         width: 50%;
+    }
+    .benefits .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .benefits .card {
+        width: calc((100% / 3) - 1.5rem);
+        margin-right: 0.75rem;
+        margin-left: 0.75rem;
+    }
+    .about .container {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .debug .about .container > div:first-child {
+        width: 70%;
+    }
+    .get-started .margin-auto {
+        width: 40%;
+    }
+    footer .margin-auto {
+        width: 40%;
     }
 }
