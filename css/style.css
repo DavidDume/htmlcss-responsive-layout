@@ -7,6 +7,7 @@
 :root {
     --header: #0084fd;
     --benefits: #b5ddff;
+    --planning: #9792e4;
 }
 
 header {
@@ -23,14 +24,14 @@ header {
     margin: 0 auto;
 }
 
-.container {
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
 }
 
-.benefits {
+.columns {
     margin-top: 80px;
 }
 
@@ -41,6 +42,18 @@ header {
     margin-bottom: 20px;
     height: 200px;
 }
+
+.planning {
+    background-color: var(--planning);
+    padding: 20px 0;
+}
+
+.debug .planning .container > div {
+    height: 200px;
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+
 
 @media screen and (min-width: 768px) {
     .margin-auto {
@@ -69,6 +82,13 @@ header {
         display: flex;
     }
     .col:first-child > div {
+        width: 50%;
+    }
+    .planning .container {
+        display: flex;
+        
+    }
+    .debug .planning .container > div {
         width: 50%;
     }
 }
