@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'roboto', sans-serif;
+}
+
 :root {
     --header: #0084fd;
     --benefits: #b5ddff;
@@ -24,12 +28,32 @@ header {
     margin: 0 auto;
 }
 
+.btn {
+    border-radius: 28px;
+    padding: 12px;
+}
+.btn-white {
+    background-color: white;
+    color: black;
+}
+
+.hidden-list {
+    display: none;
+}
+
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
 }
+
+header a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
 
 .columns {
     margin-top: 80px;
@@ -164,9 +188,20 @@ footer {
         width: 50%;
     }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1050px) {
     .margin-auto {
         width: 60%;
+    }
+    .hidden-list {
+        list-style-type: none;
+        display: flex;
+    }
+    
+    .hidden-list li {
+        padding: 10px;
+    }
+    .hidden-bars {
+        display: none;
     }
     .col:first-child {
         display: flex;
@@ -176,7 +211,6 @@ footer {
     }
     .planning .container {
         display: flex;
-        
     }
     .debug .planning .container > div {
         width: 50%;
