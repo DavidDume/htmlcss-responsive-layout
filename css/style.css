@@ -28,6 +28,11 @@ header {
     margin: 0 auto;
 }
 
+.card {
+    border-radius: 20px;
+    padding: 15px;
+}
+
 .d-inline-block {
     display: inline-block;
 }
@@ -84,7 +89,7 @@ header a {
     text-align: left;
 }
 
-.text > * {
+.margin-all-15 > * {
     margin: 15px 0;
 }
 
@@ -92,7 +97,7 @@ header a {
     color: #0084fd;
 }
 
-.text p {
+p {
     line-height: 1.8;
 }
 
@@ -113,8 +118,25 @@ header a {
 }
 
 
-.card {
-    height: 100px;
+.planning-text{
+    color: white;
+}
+
+.planning img {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+
+.planning .card {
+    background-color: white;
+    text-align: center;
+}
+
+.planning span {
+    padding: 20px;
+    background-color: #9792e4;
+    border-radius: 50%;
 }
 
 .testimonials {
@@ -199,6 +221,11 @@ footer {
         margin-right: 0.75rem;
         margin-left: 0.75rem;
     }
+
+    .planning img {
+        width: 50%;
+    }
+
     .testimonials .card {
         display: flex;
         align-items: center;
