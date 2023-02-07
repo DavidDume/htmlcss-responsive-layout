@@ -53,6 +53,13 @@ header {
     padding-right: 2rem;
     letter-spacing: 5px;
 }
+.btn-violet {
+    background-color: var(--main-color);
+    color: white;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    letter-spacing: 5px;
+}
 
 .hidden-list {
     display: none;
@@ -167,7 +174,14 @@ p {
 .benefits .card {
     background-color: white;
     margin: 20px 0;
-    border: 1px solid black;
+}
+
+.benefits h3 {
+    color: var(--main-color);
+}
+.benefits span {
+    color: var(--main-color);
+    font-size: 20px;
 }
 
 .debug .about .container > div {
