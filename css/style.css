@@ -184,16 +184,36 @@ p {
     font-size: 20px;
 }
 
-.debug .about .container > div {
-    border: 1px solid black;
-    height: 100px;
-}
-.debug .about .container > div:first-child {
-    height: 200px;
-}
-
 .about {
     margin: 20px 0;
+}
+
+.about h2 {
+    color: var(--main-color);
+}
+
+.about-img {
+    position: relative;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-image: url("../img/testimonial2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+.about-img i {
+    position: absolute;
+    left: 120px;
+    font-size: 50px;
+    color: var(--main-color);
+}
+
+.about a {
+    background-color: var(--main-color);
+    color: white;
 }
 
 .get-started {
@@ -268,9 +288,12 @@ footer {
         display: flex;
         justify-content: flex-start;
     }
-    .debug .about .container > div {
-        width: 50%;
+
+    .about .container > div:first-child {
+        width: 70%;
+        margin-right: 25px;
     }
+
     .get-started .margin-auto {
         width: 50%;
     }
@@ -326,13 +349,7 @@ footer {
         margin-right: 0.75rem;
         margin-left: 0.75rem;
     }
-    .about .container {
-        display: flex;
-        justify-content: flex-start;
-    }
-    .debug .about .container > div:first-child {
-        width: 70%;
-    }
+
     .get-started .margin-auto {
         width: 40%;
     }
