@@ -101,7 +101,7 @@ p {
     line-height: 1.8;
 }
 
-.col img {
+.img {
     width: 60%;
     display: block;
     margin: 0 auto;
@@ -122,12 +122,6 @@ p {
     color: white;
 }
 
-.planning img {
-    width: 60%;
-    display: block;
-    margin: 0 auto;
-}
-
 .planning .card {
     background-color: white;
     text-align: center;
@@ -143,10 +137,26 @@ p {
     margin-top: 20px;
 }
 
+.testimonials-text {
+    text-align: center;
+}
+
+.testimonials-text h2 {
+    color: var(--main-color);
+}
+
+.testimonials img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+
 .testimonials .card {
     text-align: center;
     background-color: var(--main-color);
     margin: 20px 0;
+    color: white;
 }
 
 .benefits {
@@ -215,7 +225,6 @@ footer {
         margin: 0;
     }
     
-
     .col {
         width: calc((100% / 3) - 1.5rem);
         margin-right: 0.75rem;
@@ -228,11 +237,10 @@ footer {
 
     .testimonials .card {
         display: flex;
+        justify-content: space-between;
         align-items: center;
     }
-    .testimonials .card div:first-child {
-        width: 30%;
-    }
+
     .benefits .container {
         display: flex;
         flex-wrap: wrap;
@@ -286,9 +294,15 @@ footer {
     .planning .container {
         display: flex;
     }
-    .debug .planning .container > div {
-        width: 50%;
+
+    .testimonials .card {
+        text-align: left;
     }
+
+    .testimonials .card img {
+        margin-right: 20px;
+    }
+
     .benefits .container {
         display: flex;
         flex-wrap: wrap;
